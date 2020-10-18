@@ -1,7 +1,7 @@
 # Description
 This is the glassdale project from NSS book 2, I will be accessing an API to grab information about officers and criminals along with their convitions. I will be adding lots to the DOM through this book and will continue to update the code with commits describing what has been added.
 
-#In order to get started working on the code
+# In order to get started working on the code
 
 Enter the following git commands inside your terminal.
 

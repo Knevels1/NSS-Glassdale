@@ -20,7 +20,7 @@ textarea {
 
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
@@ -35,4 +35,9 @@ h1,h2,h3,h4,h5,h6 {
 	margin:  1em;
 	padding: 0.5em;
 	flex-basis: 25%;
+}
+h3{
+	font-family: "Patua One", serif;
+	letter-spacing: 5px;
+	text-align: center;
 }

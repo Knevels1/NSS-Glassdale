@@ -30,7 +30,7 @@ const render = convictionsCollection => {
                     convictionsObj => {
                        return `<option value="${convictionsObj.id}">${convictionsObj.name}</option>` 
                     }
-                )
+                ).join("")
             }
         </select>
     `

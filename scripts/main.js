@@ -1,11 +1,8 @@
-// import {getOfficers, useOfficers} from "./officers/OfficerProvider.js"
-//  getOfficers()
-//  .then(() => {
-//      const officerArray = useOfficers()
-//  })
- import {CriminalList} from "./criminals/CriminalList.js"
- CriminalList()
+import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
+import {CriminalList} from "./criminals/CriminalList.js"
+ import {OfficerList} from "./officers/OfficerList.js"
+ 
 
-
-//import {getCriminals} from "./criminals/criminalDataProvider.js"
-//const criminalsArray = getCriminals()
+CriminalList()
+OfficerList()
+ConvictionSelect()

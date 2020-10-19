@@ -12,7 +12,7 @@ textarea {
 	background-size: 500px 250px;
 	background-attachment: fixed;
 	background-position: center;
-	background-color: lightblue;
+	background-color: lightseagreen;
 	color: #404040;
 	font-family: "Comfortaa", Arial, sans-serif;
 	font-size: 14px;
@@ -31,6 +31,7 @@ h1,h2,h4,h5,h6 {
 	align-content: space-between;
 }
 .criminal {
+	color: white;
 	border: 1px dotted red;
 	margin:  1em;
 	padding: 0.5em;

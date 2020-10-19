@@ -2,15 +2,18 @@
  *   ConvictionSelect component that renders a select HTML element
  *   which lists all convictions in the Glassdale PD API
  */
-import { useConvictions } from "./ConvictionProvider.js"
+import { getConvictions, useConvictions } from "./ConvictionProvider.js"
 
 // Get a reference to the DOM element where the <select> will be rendered
 const contentTarget = document.querySelector(".filters__crime")
 
 export const ConvictionSelect = () => {
     // Get all convictions from application state
-    const convictions = useConvictions()
-    render(convictions)
+    getConvictions()
+    .then(() => {
+        const convictions = useConvictions()
+        render(convictions)
+    })
 }
 
 const render = convictionsCollection => {

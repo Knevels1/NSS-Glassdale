@@ -50,9 +50,7 @@ const render = convictionsCollection => {
             crimeThatWasChosen: parseInt(changeEvent.target.value)
             }
         })
-        // debugger
-    
-        // Dispatch to event hub
+        
         eventHub.dispatchEvent(customEvent)
         }
   })

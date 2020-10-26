@@ -60,3 +60,12 @@ h3,h2{
 	display: flex;
 	flex-wrap: wrap;
 }
+.contentContainer{
+	display: flex;
+}
+.criminalsContainer{
+	flex: 3;
+}
+.notesContainer{
+	flex: 1;
+}

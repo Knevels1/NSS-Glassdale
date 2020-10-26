@@ -7,6 +7,30 @@
       "suspect": "Ted Cruz",
       "note": "suspected of being the zodiac killer...",
       "id": 4
+    },
+    {
+      "dateOfInterview": "2019-03-30",
+      "timestamp": 1603743459540,
+      "author": "Judge Dred",
+      "suspect": "Casper",
+      "note": "Tried to flee when first confronted but tripped on a donut and was apprehended shortly after.",
+      "id": 5
+    },
+    {
+      "dateOfInterview": "2017-07-11",
+      "timestamp": 1603743592596,
+      "author": "Officer Doofy",
+      "suspect": "Ted",
+      "note": "Broke out of handcuffs during interview, very sus.",
+      "id": 6
+    },
+    {
+      "dateOfInterview": "2016-10-01",
+      "timestamp": 1603743682947,
+      "author": "Master Chief",
+      "suspect": "Doofy",
+      "note": "GREASE MAN that's all that needs to be said",
+      "id": 7
     }
   ]
 }

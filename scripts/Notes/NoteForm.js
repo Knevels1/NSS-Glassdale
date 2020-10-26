@@ -15,6 +15,7 @@ const render = () => {
 }
 
 eventHub.addEventListener("click", clickEvent => {
+    console.log(clickEvent)
     if(clickEvent.target.id === "saveNote") {
         const dateOfInterview = document.querySelector("#note--dateOfInterview").value
         const author = document.querySelector("#note--author").value

@@ -1,27 +1,6 @@
 {
   "notes": [
     {
-      "dateOfInterview": "2020-03-27",
-      "author": "Judge Dred",
-      "suspect": "casper",
-      "note": "tried to run but tripped on a donut and was caught.",
-      "id": 1
-    },
-    {
-      "dateOfInterview": "2020-05-13",
-      "author": "Officer Doofy",
-      "suspect": "Ted",
-      "note": "broke out of handcuffs.",
-      "id": 2
-    },
-    {
-      "dateOfInterview": "2020-01-01",
-      "author": "Master Chief",
-      "suspect": "Doofy",
-      "note": "GREASE MAN thats all that needs to be said.",
-      "id": 3
-    },
-    {
       "dateOfInterview": "2020-10-26",
       "timestamp": 1603742004040,
       "author": "Micheal",

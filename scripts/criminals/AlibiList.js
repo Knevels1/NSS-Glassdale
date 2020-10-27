@@ -6,16 +6,12 @@ const eventHub = document.querySelector(".container")
     eventHub.addEventListener("alibiButtonClicked", (eventObj)=> {
         const arrayOfCriminals = useCriminals()
 
-        const alibiElement = document.querySelector(".alibi_list")
-            console.log(alibiElement)
-        if(alibiElement === null){
 
     //locate the criminal who's Id matched the criminalId
         const criminalLocated = arrayOfCriminals.find((criminalObj)=> {
             return criminalObj.id === parseInt(eventObj.detail.criminalId)
         })
         AlibiList(criminalLocated)
-        }
     })
 
     // function that adds list of alibis to criminal card

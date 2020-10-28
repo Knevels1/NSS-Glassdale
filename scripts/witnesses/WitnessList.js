@@ -28,7 +28,7 @@ eventHub.addEventListener("witnessesClicked", () => {
   
       witnessHTMLRepresentations += Witness(witness)
   
-      witnessesContainer.innerHTML = `
+      WitnessContainer.innerHTML = `
             <h3>Glassdale Witnesses</h3>
             <section class="witnessesList">
               ${witnessHTMLRepresentations}

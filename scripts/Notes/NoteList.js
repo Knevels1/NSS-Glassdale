@@ -24,6 +24,8 @@ const render = (notesArray) => {
       notesHTMLRepresentations += NoteHTML(note)
     }
     notesContainer.innerHTML = `
-              ${notesHTMLRepresentations}
-          `
+    <section class="noteList">
+      ${notesHTMLRepresentations}
+    </section>
+     `
   }

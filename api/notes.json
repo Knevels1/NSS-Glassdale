@@ -31,6 +31,14 @@
       "suspect": "Doofy",
       "note": "GREASE MAN that's all that needs to be said",
       "id": 7
+    },
+    {
+      "dateOfInterview": "2020-10-16",
+      "timestamp": 1603794408823,
+      "author": "Cortana",
+      "suspect": "Samuel",
+      "note": "was very cooperative and helpful, not a suspect at this time.",
+      "id": 8
     }
   ]
 }

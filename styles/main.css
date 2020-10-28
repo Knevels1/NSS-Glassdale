@@ -56,10 +56,6 @@ h3,h2{
 	padding: 0.5em;
 	flex-basis: 25%;
 }
-.filters{
-	display: flex;
-	flex-wrap: wrap;
-}
 .contentContainer{
 	display: flex;
 }
@@ -68,4 +64,11 @@ h3,h2{
 }
 .notesContainer{
 	flex: 1;
+}
+.note{
+	color: white;
+	border: 1px dotted red;
+	margin:  1em;
+	padding: 0.5em;
+	flex-basis: 25%;
 }

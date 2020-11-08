@@ -9,8 +9,8 @@ const render = (arrayOfCriminals) => {
     contentTarget.innerHTML = `
         <input id="note--dateOfInterview" type="date"/>
         <input id="note--author" type="text" placeholder="Your Name Here"/>
-        <select id="noteForm--criminal" class="criminalSelect">
-        <option value="0">Please select a criminal</option>
+        <select id="note--criminal" class="criminalSelect">
+        <option value="0">Please select a criminal...</option>
         ${
             arrayOfCriminals.map(criminal => {
                 return `<option value="${ criminal.id }">${ criminal.name }</option>`
@@ -27,7 +27,7 @@ eventHub.addEventListener("click", clickEvent => {
     if(clickEvent.target.id === "saveNote") {
         const dateOfInterview = document.querySelector("#note--dateOfInterview").value
         const author = document.querySelector("#note--author").value
-        const suspect = document.querySelector("#note--suspect").value
+        const criminalId = parseInt(document.querySelector("#note--criminal").value)
         const note = document.querySelector("#note--note").value
         const timestamp = Date.now()
 
@@ -35,7 +35,7 @@ eventHub.addEventListener("click", clickEvent => {
             dateOfInterview,
             timestamp,
             author,
-            suspect,
+            criminalId,
             note
         }
         saveNote(newNote)

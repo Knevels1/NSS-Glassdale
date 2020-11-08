@@ -1,27 +1,27 @@
 {
   "notes": [
     {
-      "dateOfInterview": "2020-11-05",
-      "timestamp": 1604793008107,
-      "author": "gfhdf",
+      "dateOfInterview": "2020-01-07",
+      "timestamp": 1604793858381,
+      "author": "Officer Doofy",
       "criminalId": 1,
-      "note": "fdsgsfdg",
+      "note": "I think they did it",
       "id": 1
     },
     {
-      "dateOfInterview": "",
-      "timestamp": 1604793175813,
-      "author": "",
-      "criminalId": 2,
-      "note": "",
+      "dateOfInterview": "2020-03-07",
+      "timestamp": 1604793894108,
+      "author": "Master Chief",
+      "criminalId": 7,
+      "note": "I think they have a pretty solid alibi ",
       "id": 2
     },
     {
-      "dateOfInterview": "",
-      "timestamp": 1604793727309,
-      "author": "",
-      "criminalId": 1,
-      "note": "",
+      "dateOfInterview": "2020-08-26",
+      "timestamp": 1604793927396,
+      "author": "judge dred",
+      "criminalId": 13,
+      "note": "they tried to run when being interviewed definitely sus.",
       "id": 3
     }
   ]

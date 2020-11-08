@@ -1,44 +1,28 @@
 {
   "notes": [
     {
-      "dateOfInterview": "2020-10-26",
-      "timestamp": 1603742004040,
-      "author": "Micheal",
-      "suspect": "Ted Cruz",
-      "note": "suspected of being the zodiac killer...",
-      "id": 4
-    },
-    {
-      "dateOfInterview": "2019-03-30",
-      "timestamp": 1603743459540,
-      "author": "Judge Dred",
-      "suspect": "Casper",
-      "note": "Tried to flee when first confronted but tripped on a donut and was apprehended shortly after.",
-      "id": 5
-    },
-    {
-      "dateOfInterview": "2017-07-11",
-      "timestamp": 1603743592596,
+      "dateOfInterview": "2020-01-07",
+      "timestamp": 1604793858381,
       "author": "Officer Doofy",
-      "suspect": "Ted",
-      "note": "Broke out of handcuffs during interview, very sus.",
-      "id": 6
+      "criminalId": 1,
+      "note": "I think they did it",
+      "id": 1
     },
     {
-      "dateOfInterview": "2016-10-01",
-      "timestamp": 1603743682947,
+      "dateOfInterview": "2020-03-07",
+      "timestamp": 1604793894108,
       "author": "Master Chief",
-      "suspect": "Doofy",
-      "note": "GREASE MAN that's all that needs to be said",
-      "id": 7
+      "criminalId": 7,
+      "note": "I think they have a pretty solid alibi ",
+      "id": 2
     },
     {
-      "dateOfInterview": "2020-10-16",
-      "timestamp": 1603794408823,
-      "author": "Cortana",
-      "suspect": "Samuel",
-      "note": "was very cooperative and helpful, not a suspect at this time.",
-      "id": 8
+      "dateOfInterview": "2020-08-26",
+      "timestamp": 1604793927396,
+      "author": "judge dred",
+      "criminalId": 13,
+      "note": "they tried to run when being interviewed definitely sus.",
+      "id": 3
     }
   ]
 }

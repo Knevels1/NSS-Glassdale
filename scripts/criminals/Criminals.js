@@ -19,7 +19,6 @@ eventHub.addEventListener("click", (eventObj)=> {
 
     // check to see if the button was click IS in fact the alibi button
     if(eventObj.target.id.startsWith("associates--")){
-        console.log("alibi button was clicked:", nameOfId, criminalId)
         //custom event
         const alibiEvent = new CustomEvent("alibiButtonClicked", {
             detail: {

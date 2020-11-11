@@ -23,7 +23,7 @@ const eventHub = document.querySelector(".container")
 
     //render method for adding alibis
     const render = (criminalObj) => {
-        const contentTarget = document.querySelector(`#criminal-${criminalObj.id}`)
+        const contentTarget = document.querySelector(`.criminal`)
 
         contentTarget.innerHTML += `
         <div class="alibi_list">

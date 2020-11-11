@@ -10,6 +10,10 @@ const eventHub = document.querySelector(".container")
 
 
 const criminalsContainer = document.querySelector(".criminalsContainer")
+let facilities = []
+let crimFac = []
+let criminals = []
+
 
 export const CriminalList = () => {
   // Kick off the fetching of both collections of data
@@ -18,9 +22,9 @@ export const CriminalList = () => {
       .then(
           () => {
               // Pull in the data now that it has been fetched
-              const facilities = useFacilities()
-              const crimFac = useCriminalFacilities()
-              const criminals = useCriminals()
+              facilities = useFacilities()
+              crimFac = useCriminalFacilities()
+              criminals = useCriminals()
 
               // Pass all three collections of data to render()
               render(criminals, facilities, crimFac)
@@ -41,6 +45,13 @@ eventHub.addEventListener("crimeSelected", event => {
     // Get the array of convictions
     const convictionsArray = useConvictions()
     // console.log("array of convictions", convictionsArray)
+    //get the facilites
+    const facilities = useFacilities()
+    //get the crimFac
+    const criminalFacility = useCriminalFacilities()
+
+
+
 
     // Use the find method to get the first object in the convictions array that has the same id as the id of the chosen crime
     const convictionThatWasChosen = convictionsArray.find(convictionObj => {
@@ -50,7 +61,7 @@ eventHub.addEventListener("crimeSelected", event => {
     const filteredCriminalsArray = criminalsArray.filter(criminalObj => {
       return criminalObj.conviction === convictionThatWasChosen.name
     })
-    render(filteredCriminalsArray)
+    render(filteredCriminalsArray, facilities, criminalFacility)
   }else {
       CriminalList()
   }
@@ -58,24 +69,28 @@ eventHub.addEventListener("crimeSelected", event => {
 
 eventHub.addEventListener("officerSelected", officerSelectedEventObj => {
   const selectedOfficerName = officerSelectedEventObj.detail.officerName
-  console.log("CriminalList: officerSelected custom event has been heard on the event hub, selected officer name: ", selectedOfficerName)
+  //console.log("CriminalList: officerSelected custom event has been heard on the event hub, selected officer name: ", selectedOfficerName)
 
   const criminalsArray = useCriminals()
-  console.log("criminalsArray", criminalsArray)
+  //console.log("criminalsArray", criminalsArray)
+
+    //get the facilites
+    const facilities = useFacilities()
+    //get the crimFac
+    const criminalFacility = useCriminalFacilities()
 
   const filteredArrayCriminals = criminalsArray.filter(
     (criminalObj) => {
 
-      if (criminalObj.arrestingOfficer === selectedOfficerName) {
+      if (criminalObj.arrestingOfficer !== 0) {
         return criminalObj.arrestingOfficer === selectedOfficerName
       }
-    }
-  )
-  console.log("CriminalList: Array of criminals filtered for only the criminals that were arrested by selected officer", filteredArrayCriminals)
+    })
+  //console.log("CriminalList: Array of criminals filtered for only the criminals that were arrested by selected officer", filteredArrayCriminals)
 
-  render(filteredArrayCriminals)
+  render(filteredArrayCriminals, facilities, criminalFacility)
   
-  console.log("CriminalList: Filtered list of criminals rendered to DOM")
+  //console.log("CriminalList: Filtered list of criminals rendered to DOM")
 })
 
 

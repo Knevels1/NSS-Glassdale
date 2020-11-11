@@ -23,11 +23,9 @@ export const Criminal = (criminalObject, facilities) => {
     </div>
     `
 }
-
 eventHub.addEventListener("click", (eventObj)=> {
     //split the id of the alibi button!
     const [nameOfId, criminalId] = eventObj.target.id.split("--")
-
     // check to see if the button was click IS in fact the alibi button
     if(eventObj.target.id.startsWith("associates--")){
         //custom event
